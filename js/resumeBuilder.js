@@ -7,7 +7,7 @@ var bio = {
 		"github": "https://github.com/thleung",
 		"mobile": "408-506-5938"
 	},
-	"welcomeMessage": "Welcome to my webpage containing my resume and projects",
+	"welcomeMessage": "I am an experienced software engineer looking to transition from software programming to front end web developer.  I am a skilled problem solver, quick learner and analytical thinker, looking to apply these skills as a web developer.",
 	"skills": ["HTML", "CSS", "Javascript", "Perl", "Python", "C"],
 	"bioPic": "images/fry.jpg"
 }
