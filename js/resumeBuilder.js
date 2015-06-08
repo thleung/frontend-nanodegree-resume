@@ -71,7 +71,7 @@ var education = {
 			"title": "Front-End Web Developer Nanodegree",
 			"school": "Udacity",
 			"dates": "2015 - Future",
-			"url": "hhttps://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 		},
 		{
 			"title": "Programming Foundations with Python",
@@ -164,9 +164,9 @@ work.display = function() {
 		$(".work-entry:last").append(formattedWorkDescription);
 	}
 }
-
 function inName() {
-	var name = window.name;
+    //var name = window.name;
+    var name = $("#name").html();
 	name = name.trim().split(" ");
 	console.log(name);
 	name[1]=name[1].toUpperCase();
