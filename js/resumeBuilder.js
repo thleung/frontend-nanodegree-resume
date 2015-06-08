@@ -85,11 +85,13 @@ var education = {
 education.display = function() {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
-		var formattedSchool = HTMLschoolName.replace("%data%", education.schools[school].name);
+		var formattedSchool = HTMLschoolName.replace("%data%", education.schools[school].name).replace('#', education.schools[school].url);;
 		//.replace('#', education.schools[school].url)
 		//$(".education-entry:last").append(formattedSchool);
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 		$(".education-entry:last").append(formattedSchool + formattedDegree);
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 		$(".education-entry:last").append(formattedDates);
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
